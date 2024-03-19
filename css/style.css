@@ -203,3 +203,12 @@ section {
 .objetivos_container p{
     color: var(--color-white);
 }
+
+.proceso{
+    padding: 6rem 0;
+}
+
+.proceso_container{
+    width: var(--container-width-sm);
+    margin: 0 auto;
+}
