@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Montserrat:wght@100;300;400;500;700;900&family=Noto+Kufi+Arabic:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +11,12 @@
 }
 
 :root {
-    --color-blue: #64b6ca;
-    --color-orange: #d24c3d;
-    --color-black-one: #080b12;
-    --color-white: #ffffff;
-    --color-black: #0a0a0b;
+
+    --color-red: #b92121;
+    --color-light-gray: #878787;
+    --color-white: #f3f3f3;
+    --color-dark-gray: #2d2d2d;
+    --color-black: #0a0a0a;
     --container-width-lg: 95%;
     --container-width-md: 90%;
     --container-width-sm: 80%;
@@ -22,28 +24,116 @@
     --transition: 400ms all ease;
 }
 
-body{
-    background: var(--color-black-one);
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+body {
+    background: var(--color-white);
+    font-family: Montserrat, sans-serif;
+    color: var(--color-black);
 }
 
-section{
+section {
     padding: 4rem 0;
 }
 
 h1 {
-    font-size:3.1rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 3.1rem;
+    padding-bottom: 1rem;
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
 }
 
-p{
-    color: #999898;
+p {
+    color: var(--color-dark-gray);
     font-size: 1rem;
+    padding: 1rem 0;
 }
+
+section {
+    padding: 4rem 0;
+}
+
+.subtitulo {
+    color: var(--color-red);
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.punto {
+    font-size: 2rem;
+    color: var(--color-red);
+}
+
+.btn {
+    font-family: Montserrat, Sans-serif;
+    font-size: .8rem;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: .8rem 1rem;
+    border-radius: 40px;
+    transition: var(--transition);
+    border: 1.5px solid var(--color-red);
+}
+
+.btn2 {
+    font-family: Montserrat, Sans-serif;
+    font-size: .8rem;
+    color: var(--color-dark-gray);
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: .8rem 1rem;
+    border-radius: 40px;
+    transition: var(--transition);
+    border: 1.5px solid var(--color-dark-gray);
+    cursor: pointer;
+}
+
+.btn3{
+    font-family: Montserrat, Sans-serif;
+    font-size: .8rem;
+    color: var(--color-white);
+    background: none;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: .8rem 1rem;
+    border-radius: 40px;
+    transition: var(--transition);
+    border: 1.5px solid var(--color-white);
+    cursor: pointer;
+}
+
+.btn3:hover{
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.btn:hover {
+    color: #878787;
+    border: 1.5px solid var(--color-light-gray);
+    background: none;
+    cursor: pointer;
+}
+
+.circulo {
+    font-size: 3rem;
+    color: var(--color-red);
+}
+
+.saber_mas {
+    color: #0a0a0a;
+    padding-left: 2rem;
+    transition: var(--transition);
+}
+
+.saber_mas:hover {
+    color: var(--color-red);
+    font-weight: 500;
+}
+
 
 /* MENU-------------------------------------  */
 
@@ -54,7 +144,7 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    background-color:transparent; 
+    background-color: transparent;
 }
 
 .menu {
@@ -62,21 +152,54 @@ p{
 }
 
 .menu_item {
-    margin-right: 3rem; /* Adjust the spacing between menu items */
-    letter-spacing: 2px;
+    font-size: .9rem;
+    margin-right: 3rem;
     font-weight: 400;
 }
 
 .menu_item a {
     text-decoration: none;
-    color: #f1efef; 
+    color: var(--color-light-gray);
     transition: var(--transition);
 }
 
-.menu_item a:hover{
-    color: var(--color-orange);
+.menu_item a:hover {
+    color: var(--color-red);
 }
 
-#active{
-    color: var(--color-orange);
+.active {
+    color: var(--color-red);
+    font-weight: 500;
+}
+
+.navigation .logo h2 {
+    font-family: helvetica;
+    font-size: 2rem;
+}
+
+/* PORTADA_________________ */
+
+.portada_container {
+    width: var(--container-width-sm);
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/* OBJETIVOS_________________ */
+
+.objetivos{
+    background: var(--color-black);
+    padding: 6rem 0;
+}
+
+.objetivos_container {
+    width: 60%;
+    margin: 0 auto;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.objetivos_container p{
+    color: var(--color-white);
 }
