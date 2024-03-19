@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Montserrat:wght@100;300;400;500;700;900&family=Noto+Kufi+Arabic:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #64b6ca;
+    --color-orange: #d24c3d;
+    --color-black-one: #080b12;
+    --color-white: #ffffff;
+    --color-black: #0a0a0b;
+    --container-width-lg: 95%;
+    --container-width-md: 90%;
+    --container-width-sm: 80%;
+    --container-width-very-sm: 75%;
+    --transition: 400ms all ease;
+}
+
+body{
+    background: var(--color-black-one);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+section{
+    padding: 4rem 0;
+}
+
+h1 {
+    font-size:3.1rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    color: #999898;
+    font-size: 1rem;
+}
+
+/* MENU-------------------------------------  */
+
+.navigation {
+    width: var(--container-width-sm);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color:transparent; 
+}
+
+.menu {
+    display: flex;
+}
+
+.menu_item {
+    margin-right: 3rem; /* Adjust the spacing between menu items */
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.menu_item a {
+    text-decoration: none;
+    color: #f1efef; 
+    transition: var(--transition);
+}
+
+.menu_item a:hover{
+    color: var(--color-orange);
+}
+
+#active{
+    color: var(--color-orange);
+}
