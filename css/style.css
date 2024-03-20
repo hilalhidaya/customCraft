@@ -13,11 +13,12 @@
 :root {
 
     --color-red: #b92121;
+    --color-dark-red: #940101;
     --color-light-gray: #878787;
-    --color-white: #f3f3f3;
+    --color-white: #fbfbf1;
     --color-dark-gray: #2d2d2d;
     --color-black: #0a0a0a;
-    --container-width-lg: 95%;
+    --container-width-lg: 90%;
     --container-width-md: 90%;
     --container-width-sm: 80%;
     --container-width-very-sm: 75%;
@@ -36,8 +37,7 @@ section {
 
 h1 {
     font-family: Montserrat, sans-serif;
-    font-size: 3.1rem;
-    padding-bottom: 1rem;
+    font-size: 2.8rem;
 }
 
 h2 {
@@ -80,6 +80,7 @@ section {
 }
 
 .btn2 {
+    background: none;
     font-family: Montserrat, Sans-serif;
     font-size: .8rem;
     color: var(--color-dark-gray);
@@ -92,7 +93,7 @@ section {
     cursor: pointer;
 }
 
-.btn3{
+.btn3 {
     font-family: Montserrat, Sans-serif;
     font-size: .8rem;
     color: var(--color-white);
@@ -106,9 +107,11 @@ section {
     cursor: pointer;
 }
 
-.btn3:hover{
-    color: var(--color-black);
-    background-color: var(--color-white);
+.btn3:hover {
+    color: var(--color-white);
+    font-weight: 500;
+    background-color: var(--color-red);
+    border: 1.5px solid var(--color-red);
 }
 
 .btn:hover {
@@ -119,6 +122,7 @@ section {
 }
 
 .circulo {
+    font-family: Montserrat, sans-serif;
     font-size: 3rem;
     color: var(--color-red);
 }
@@ -134,11 +138,18 @@ section {
     font-weight: 500;
 }
 
+.txt_color {
+    background: linear-gradient(45deg, var(--color-red), var(--color-dark-red));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 
 /* MENU-------------------------------------  */
 
 .navigation {
-    width: var(--container-width-sm);
+    width: var(--container-width-lg);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -172,23 +183,94 @@ section {
     font-weight: 500;
 }
 
-.navigation .logo h2 {
-    font-family: helvetica;
-    font-size: 2rem;
+.logo img {
+    width: 40%;
+    height: 100%;
 }
 
 /* PORTADA_________________ */
 
 .portada_container {
-    width: var(--container-width-sm);
+    width: var(--container-width-lg);
     display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 
+.portada_txt {
+    width: 40%;
+}
+
+.portada_img {
+    max-width: 60%;
+    padding-left: 4rem;
+    margin-top: -3rem;
+}
+
+.portada_img img {
+    width: 100%;
+}
+/* SERVICIOS_________________  */
+
+.servicios {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+.servicios_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.servicios_txt {
+    margin-top: 5rem;
+    padding-left: 3rem;
+    width: 50%;
+}
+
+.servicios_btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.servicios_elementos {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+}
+
+.servicios_elementos_izq {
+    margin-top: -50px;
+}
+
+.servicios_elementos_izq a {
+    text-decoration: none;
+}
+
+.servicios_elemento {
+    background: var(--color-red);
+    margin-bottom: 2rem;
+    padding: 4rem 2rem 1.5rem;
+    color: var(--color-white);
+    border: 3px solid var(--color-red);
+    transition: var(--transition);
+}
+
+.servicios_elemento p {
+    font-size: .9rem;
+    color: inherit;
+    line-height: 1.5;
+}
+
+.servicios_elemento:hover {
+    background: none;
+    color: var(--color-dark-red);
+    cursor: pointer;
+}
 
 /* OBJETIVOS_________________ */
 
-.objetivos{
+.objetivos {
     background: var(--color-black);
     padding: 6rem 0;
 }
@@ -200,15 +282,97 @@ section {
     text-align: center;
 }
 
-.objetivos_container p{
-    color: var(--color-white);
+.objetivos_container h2 {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 700;
 }
 
-.proceso{
+.objetivos_container p {
+    color: var(--color-light-gray);
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+/* PROCESO_________________ */
+
+
+.proceso {
     padding: 6rem 0;
 }
 
-.proceso_container{
+.proceso_container {
     width: var(--container-width-sm);
     margin: 0 auto;
+}
+
+/* NOTICIAS_________________  */
+
+.noticias_txt {
+    width: var(--container-width-sm);
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* PROYECTOS DESTACADOS_________________  */
+
+.proyectos {
+    background: var(--color-black);
+    color: white;
+    padding-top: 7rem;
+}
+
+.proyectos_container {
+    width: var(--container-width-md);
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.proyectos_txt {
+    margin-top: 10%;
+    width: 50%;
+}
+
+.proyectos_titulo p{
+    padding-bottom: 1rem;
+}
+
+.proyectos_txt p {
+    color: var(--color-light-gray);
+}
+.proyectos_btn {
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.proyectos_elementos{
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.proyectos_elementos_izq{
+    width: 45%;
+}
+.proyectos_elementos_der{
+    width: 55%;
+    margin-top: -3rem;
+}
+
+.proyecto_elemento{
+    margin-bottom: 2rem;
+}
+
+.proyecto_elemento_txt{
+    border: 1.5px solid var(--color-dark-gray);
+    border-top: none;
+    padding: 1rem;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.proyecto_img img{
+    width: 100%;
 }
