@@ -147,6 +147,9 @@ section {
 
 
 /* MENU-------------------------------------  */
+header {
+    width: 100%;
+}
 
 .navigation {
     width: var(--container-width-lg);
@@ -156,6 +159,7 @@ section {
     align-items: center;
     padding: 20px 0;
     background-color: transparent;
+    transition: var(--transition);
 }
 
 .menu {
@@ -186,6 +190,18 @@ section {
 .logo img {
     width: 40%;
     height: 100%;
+}
+
+.sticky {
+
+    position: fixed;
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: 3;
 }
 
 /* PORTADA_________________ */
@@ -397,12 +413,12 @@ section {
 
 /* FOOTER_________ */
 
-.footer{
+.footer {
     background: var(--color-black);
-    -webkit-box-shadow: 0px -6px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -6px 30px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px -6px 30px 0px rgba(0,0,0,0.75);
-    }
+    -webkit-box-shadow: 0px -6px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -6px 30px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -6px 30px 0px rgba(0, 0, 0, 0.75);
+}
 
 .footer_container {
     width: var(--container-width-md);
@@ -412,7 +428,7 @@ section {
     margin: 0 auto;
 }
 
-.footer_logo img{
+.footer_logo img {
     width: 100%;
 }
 
@@ -469,5 +485,3 @@ section {
     padding: 1rem 0 2rem;
     border-top: 1px solid var(--color-dark-gray);
 }
-
-
