@@ -213,7 +213,6 @@ header {
 .portada_container {
     width: var(--container-width-lg);
     display: flex;
-    justify-content: center;
     margin: 0 auto;
 }
 
@@ -231,14 +230,22 @@ header {
     width: 100%;
 }
 
+.portada_btn{
+   display: flex;
+   gap: 1rem;
+}
+
 /* SERVICIOS_________________  */
 
 .servicios {
-    width: var(--container-width-lg);
-    margin: 0 auto;
+    -webkit-box-shadow: 0px -6px 30px 0px rgba(203, 203, 203, 0.9);
+    -moz-box-shadow: 0px -6px 30px 0px rgba(203, 203, 203, 0.9);
+    box-shadow: 0px -6px 30px 0px rgba(203, 203, 203, 0.9);
 }
 
 .servicios_container {
+    margin: 0 auto;
+    width: var(--container-width-lg);
     display: flex;
     gap: 2rem;
 }
@@ -251,6 +258,7 @@ header {
 
 .servicios_btn {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -335,11 +343,11 @@ header {
     z-index: -1;
 }
 
-.proceso_txt .subtitulo{
+.proceso_txt .subtitulo {
     padding-bottom: .5rem;
 }
 
-.proceso_txt p{
+.proceso_txt p {
     width: 90%;
     margin: 0 auto;
 }
@@ -380,7 +388,7 @@ header {
 
 .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
-    text-align: right;
+    text-align: center;
 }
 
 .timeline-item:nth-child(even) {
@@ -427,17 +435,7 @@ header {
 }
 
 
-/* NOTICIAS_________________  */
 
-.noticias_txt {
-    width: var(--container-width-sm);
-    margin: 0 auto;
-    text-align: center;
-}
-
-.noticias_txt .subtitulo{
-    padding-bottom: 0;
-}
 
 /* PROYECTOS DESTACADOS_________________  */
 
@@ -470,6 +468,7 @@ header {
 .proyectos_btn {
     padding: 1rem 0;
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -515,6 +514,17 @@ header {
     cursor: pointer;
 }
 
+/* NOTICIAS_________________  */
+
+.noticias_txt {
+    width: var(--container-width-sm);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.noticias_txt .subtitulo {
+    padding-bottom: 0;
+}
 
 
 /* FOOTER_________ */
@@ -538,7 +548,7 @@ header {
     width: 100%;
 }
 
-.footer_brand p{
+.footer_brand p {
     color: var(--color-light-gray);
 }
 
@@ -599,9 +609,186 @@ header {
 
 /* RESPONSIVE______________________________ */
 
-/* responsive */
+/* TABLETS----------- */
+@media (max-width: 991.98px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .circulo {
+        font-size: 1.9rem;
+    }
+
+    .btn,
+    .btn2,
+    .btn3 {
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .portada_container {
+        margin: 0 auto;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .portada_txt {
+        margin: 0 auto;
+        text-align: center;
+        line-height: normal;
+        padding-bottom: 2rem;
+        width: 90%;
+    }
+
+    .portada_img {
+        padding-top: 2rem;
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+    /* servicios______ */
+    .servicios_container {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -5rem;
+        flex-direction: column-reverse;
+    }
+
+    .servicios_txt {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .servicios_elementos {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .servicios_elementos_izq {
+        margin: 0 auto;
+    }
+
+    /* proyectos */
+    .proyectos_container {
+        margin-top: -5rem;
+        flex-direction: column;
+    }
+
+    .proyectos_txt {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .proyectos_btn a {
+        padding: .5rem;
+    }
+
+    .proyectos_elementos_der {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+
+    /* footer */
+
+    .footer_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+}
+
+/* MOVILES----------- */
 @media(max-width: 767px) {
-    .timeline-items::before {
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .circulo {
+        font-size: 1.9rem;
+    }
+
+    .btn,
+    .btn2,
+    .btn3 {
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .portada_container {
+        margin: 0 auto;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .portada_txt {
+        margin: 0 auto;
+        text-align: center;
+        line-height: normal;
+        padding-bottom: 2rem;
+        width: 95%;
+    }
+
+    .portada_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portada_img {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    /* servicios______ */
+    .servicios_container {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -5rem;
+        flex-direction: column-reverse;
+    }
+
+    .servicios_elementos {
+        flex-direction: column;
+    }
+
+    .servicios_txt {
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 3rem 20px 2rem; 
+    }
+
+    /* objetivos */
+
+    .objetivos_container{
+        width: var(--container-width-lg);
+    }
+
+     /*LINEA DE TIEMPO*/
+
+     .timeline-section{
+        width: 95%;
+     }
+
+     .timeline-content h3{
+        font-size: 1rem;
+     }
+
+     .timeline-items::before {
         left: 7px;
     }
 
@@ -612,10 +799,52 @@ header {
 
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
-        padding-left: 37px;
+        padding-left: 1.5rem;
+        text-align: left;
     }
 
     .timeline-dot {
         left: 0;
     }
+
+    /* proyectos */
+    .proyectos_elementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyectos_elementos_izq,
+    .proyectos_elementos_der {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    /* footer */
+
+    .footer_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .footer_section {
+        padding: 0;
+    }
+
+    .footer_brand {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .footer_socials{
+        width: 50%;
+        padding-top: 1rem;
+        margin: 0 auto;
+    }
+
+   
 }
