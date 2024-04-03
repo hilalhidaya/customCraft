@@ -538,6 +538,10 @@ header {
     width: 100%;
 }
 
+.footer_brand p{
+    color: var(--color-light-gray);
+}
+
 .footer_section {
     padding: 3rem 2rem;
     font-size: 1rem;
