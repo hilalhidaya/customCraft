@@ -10,5 +10,5 @@ function stickyNavbar() {
 }
 
 
-const API_KEY = "fcb65153a7674120b954ad114b80187d";
-const url = "https://newsapi.org/v2/everything?q= bitcoin"
+// MENU DESPLEGABLE
+

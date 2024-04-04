@@ -131,17 +131,6 @@ section {
     color: var(--color-red);
 }
 
-.saber_mas {
-    color: #0a0a0a;
-    padding-left: 2rem;
-    transition: var(--transition);
-}
-
-.saber_mas:hover {
-    color: var(--color-red);
-    font-weight: 500;
-}
-
 .txt_color {
     background: linear-gradient(45deg, var(--color-red), var(--color-dark-red));
     -webkit-background-clip: text;
@@ -231,8 +220,10 @@ header {
 }
 
 .portada_btn{
-   display: flex;
-   gap: 1rem;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    padding-bottom: 2rem;
 }
 
 /* SERVICIOS_________________  */
@@ -393,7 +384,7 @@ header {
 
 .timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
-}
+} 
 
 .timeline-dot {
     height: 16px;
@@ -650,6 +641,10 @@ header {
         max-width: 95%;
     }
 
+    .portada_btn{
+        justify-content: center;
+    }
+
     /* servicios______ */
     .servicios_container {
         margin: 0 auto;
@@ -705,7 +700,7 @@ header {
 }
 
 /* MOVILES----------- */
-@media(max-width: 767px) {
+@media(max-width: 765px) {
 
     h1 {
         font-size: 1.9rem;
